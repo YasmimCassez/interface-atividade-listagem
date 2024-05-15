@@ -1,0 +1,49 @@
+/* Amazon.module.css */
+.ctnLivros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.amazonCard {
+    flex: 1 1 calc(33.333% - 32px);
+    max-width: calc(33.333% - 32px);
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.amazonCard:hover {
+    transform: translateY(-5px);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.paginationButton {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.paginationButton:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+}
+
+.paginationButton:not(:disabled):hover {
+    background-color: #005bb5;
+}
